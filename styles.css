@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+h1{
+    text-transform: capitalize;}
+
+
+.container{
+position: relative;
+}   
+.black{
+    width:230px;
+    height:400px;
+    border-radius: 13px;
+    background-color: black;
+
+} 
+.black .gray{
+    width:200px;
+    height:370px;
+    background-color: rgb(207, 211, 210);
+    padding:20px 10px;
+}
+input{
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
