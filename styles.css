@@ -3,29 +3,76 @@
     margin:0;
     padding:0;
 }
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.8rem;
+}
 
-h1{
-    text-transform: capitalize;}
+.move-h1{
+    text-transform: capitalize;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
 
 
 .container{
 position: relative;
+
 }   
 .black{
     width:230px;
-    height:400px;
+    height:442px;
     border-radius: 13px;
     background-color: black;
+    margin: 60px auto;
 
+
+}
+.camera{
+    width:10px;
+    height:10px;
+    border-radius:50px;
+    background-color: aliceblue;
 } 
 .black .gray{
+    margin: 20px auto;
+
     width:200px;
     height:370px;
     background-color: rgb(207, 211, 210);
     padding:20px 10px;
 }
+
 input{
     padding: 6px;
     border-radius: 5px;
     border: 1px solid black;
+}
+.move-btn{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+   
+   
+}
+.clear-btn{
+position: absolute;
+   bottom: 70px;
+left:15px;
+
+}
+.cheak-btn{
+    position: absolute;
+       bottom: 70px;
+    right:15px;
+    
+    }
+button{
+      border-style:outset; 
+       width:70px;
 }
