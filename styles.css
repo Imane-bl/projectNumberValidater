@@ -6,6 +6,7 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.8rem;
+    background-color: rgb(163, 222, 240);
 }
 
 .move-h1{
@@ -33,10 +34,13 @@ position: relative;
 
 }
 .camera{
+   
     width:10px;
     height:10px;
     border-radius:50px;
     background-color: aliceblue;
+   margin:20px auto;
+ padding:8px;
 } 
 .black .gray{
     margin: 20px auto;
@@ -59,20 +63,26 @@ input{
    
    
    
+   
+   
 }
 .clear-btn{
 position: absolute;
    bottom: 70px;
-left:15px;
+margin-left:-95px;
 
 }
 .cheak-btn{
     position: absolute;
        bottom: 70px;
-    right:15px;
+margin-right:-95px;
     
     }
 button{
       border-style:outset; 
        width:70px;
+}
+button:hover{
+    background-color: yellow;
+
 }
