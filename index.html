@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--editie here -->
     <div class="container">
        <div class="move-h1">
     <h1>telephone number vaidator</h1> 
@@ -16,18 +17,19 @@
         <div class="camera"></div>
         <div class="gray">
         
-        <label>Enetr a Phone number</label>
+        <label>Eneter a Phone number</label>
         <input type="text" id="inp">
 
-        <div class="res"></div>
+        <div id="res"> </div>
     </div>
 </div>
 
 <div class="move-btn">
-    <button class="cheak-btn">Check</button>
-    <button class="clear-btn">Clear</button>
+    <button class="cheak-btn" onclick="validation()">Check</button>
+    <button class="clear-btn"onclick=" remove()" >Clear</button>
     </div>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,32 +1,44 @@
 
 
 
-function validation(nbr) {
-    //pour les nombres
-    str=str.replace(/[^5]/gi, '').toLowerCase();//ici doit etre 5
-    
-    
-        for(let i=0;i<(nbr.length);i++){
-           if(nbr[i] !== nbr[str.length-i-1]){
-             return `"${nbr}"=> valide `;
-                 }
-        }
-                
-                 return `"${nbr}"=> pas valide `;
-                
+
+  function telephoneCheck(str) {
+    let exp = /^(1\s?)?(\(\d{3}\)|\d{3})[\-\s]?(\d{3})[\-\s]?(\d{4})$/;
+    if(exp.test(str)){
+      
+        return  `${str} -->valide`
+    }else {
+       return `${str} -->not valide`
+
     }
+    }
+  
+  
+  
+  //telephoneCheck("555-555-5555");
 
 
-let inter=document.querySelector("inp").value
-
-let resultat=document.querySelector(".res")
-
-function validation() {
+function  validation() {
     const inputText = document.getElementById('inp').value;
-    const resultElement = document.getElementById('result');
-    const result = validnmbr(inputText);
+    const resultElement = document.getElementById('res');
+    let btn=document.getElementsByClassName("clear-btn");
+    const res = telephoneCheck(inputText);
+    resultElement.innerHTML= res;
 
-    resultElement.innerHTML = result;
+// Clear the input field after checking
+      document.getElementById('inp').value = '';
+}
+
+
+
+function remove(){
+   const inputText = document.getElementById('inp').value;
+    const resultElement = document.getElementById('res');
+    const res = telephoneCheck(inputText);
+ 
     
-    // Clear the input field after checking
-    document.getElementById('inp').value = '';}
+    resultElement.innerHTML= " "; 
+   document.getElementById('inp').value = ''
+}
+
+   
